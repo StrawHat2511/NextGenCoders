@@ -3,7 +3,7 @@
   console.log("¿Existe #header?", headerContainer);
 
   try {
-    const res = await fetch("./components/Header/Header.html");
+    const res = await fetch("components/Header/Header.html");
     console.log("Respuesta fetch:", res.status);
     const html = await res.text();
     headerContainer.innerHTML = html;
